@@ -15,4 +15,4 @@ for row in picture:
      print('*', end ='')
    else:
     print(' ', end = '')
-  print(' ')  
+  print(' ')      # need a new line after every row
