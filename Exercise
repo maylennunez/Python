@@ -68,3 +68,21 @@ print(f'The oldest cat is {oldest_cat(cat1.age,cat2.age,cat3.age)} years old')
 
 
 -----------------------------------------------------------------------------------------
+
+#Create players
+# create own objects
+
+class PlayerCharacter:
+   def __init__(self, name, age):
+      self.name = name         #attributes 
+      self.age = age
+      def run(self):
+        print('run')
+
+
+player1 = PlayerCharacter("Cindy",30)  
+player2 = PlayerCharacter("May",20)     
+print(player1.name,player1.age)
+print(player2.age, player2.name)
+print(type(player1))
+
