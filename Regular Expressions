@@ -1,1 +1,13 @@
 
+# At least 8 char long
+# Contain any sort letters, numbers $%#@
+# Has to end with a number
+
+import re
+
+pattern = re.compile(r"[A-Za-z0-9$%#@]{8,0}\d")
+password = "hgjgmgg65646@%$2"
+
+check = pattern.fullmatch(password)
+
+print(check)
