@@ -5,7 +5,7 @@
 
 import re
 
-pattern = re.compile(r"[A-Za-z0-9$%#@]{8,0}\d")
+pattern = re.compile(r"[A-Za-z0-9$%#@]{8,0}[0-9]")
 password = "hgjgmgg65646@%$2"
 
 check = pattern.fullmatch(password)
