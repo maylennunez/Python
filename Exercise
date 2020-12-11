@@ -214,6 +214,8 @@ result = "x"
 for number in numbers:
   for item in result:
     print(number * result)
+    
+    
 
 -----------------------------------------------------------------------
 # nested loop
@@ -224,4 +226,22 @@ for number in numbers:
    for count  in range(number):
      result += "x"
    print(result)
+---------------------------------
+# Emoji converter 
+
+
+   message = input("> ")
+   words = message.split(" ") 
+   output = ''
+   emojis = {
+   ";)" : "😉",
+   ":(" : "🙁"
+  }
+   for word in words:
+     output += emojis.get(word, word)+ " "
+   print(output)
+   
+   
+   
+---------------------------------
 
